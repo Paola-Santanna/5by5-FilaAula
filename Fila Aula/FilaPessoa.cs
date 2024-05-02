@@ -56,5 +56,25 @@ namespace Fila_Aula
             return head == null && tail == null;
         }
 
+        public void RunOver() //percorre a fila
+        {
+            Pessoa aux = this.head;
+            if (!IsEmpty())
+            {
+                Console.Write("Pessoas na fila: ");
+                do
+                {
+                    Console.Write($"{aux.ToString()} ");
+                    aux = aux.getNext();
+
+                } while (aux != null);
+            }
+            else
+            {
+                Console.WriteLine("\nFila Vazia");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+        }
     }
 }

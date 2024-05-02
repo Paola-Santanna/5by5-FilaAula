@@ -26,5 +26,10 @@ namespace Fila_Aula
         {
             return this.proximo;
         }
+
+        public override string? ToString()
+        {
+            return nome;
+        }
     }
 }

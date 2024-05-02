@@ -7,8 +7,9 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Hello, Fila!");
+        Console.WriteLine();
 
-        FilaPessoa filaPessoa = new ();
+        FilaPessoa filaPessoa = new();
 
         /*
          * Pessoa p1 = new ("Odair");
@@ -19,7 +20,18 @@ internal class Program
         filaPessoa.Push(new("Odair"));
         filaPessoa.Push(new("Alexa"));
         filaPessoa.Push(new("Tio Paulo"));
+        filaPessoa.RunOver();
 
+        
         filaPessoa.Pop();
+        filaPessoa.RunOver();
+
+        
+        filaPessoa.Pop();
+        filaPessoa.RunOver();
+
+       
+        filaPessoa.Pop();
+        filaPessoa.RunOver();
     }
 }
